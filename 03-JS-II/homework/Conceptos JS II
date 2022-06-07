@@ -1,0 +1,4 @@
+//* `for`
+// el bucle for es una estructura que nos permite repetir nuestro codigo x numeros de veces que necesitemos.
+//* `&&`, `||`, `!`
+//el && (And), || (Or), ! (Not), son operadores logicos que nos ayudan a la hora de estructurar nuestras condiciones en un bloque de codigo a ejecutarse.
