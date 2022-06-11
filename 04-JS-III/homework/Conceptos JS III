@@ -1,0 +1,4 @@
+//* Arrays
+//Los Arrays o Arreglos son listas de elementos en los cuales podemos ingresar o almacenar
+//todo tipo de datos dentro de una variable determinada, como; String, Booleanos, numericos, etc. 
+//Podemos acceder a cada elemento de un Array mendiante sus indices numericos, comenzando siempre por el 0 hasta N.
