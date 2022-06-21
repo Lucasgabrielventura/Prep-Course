@@ -1,0 +1,6 @@
+// Funciones Callback
+
+//Cuando realizamos la accion de pasar una funcion como argumento a otra funcion, recibe el nombre de CallBack.
+//Lo mas habitual es pasarla con el nombre de 'cb' en el argumento de la funcion.
+//en javaScript las funciones se pueden pasar como argumentos en otras funciones, se pueden retornar como resultado
+//y guardarlas en variables u otras estructuras de datos.
