@@ -27,7 +27,7 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   var array2 = [];
-  for (var i = 0; i < array.length; i++) {
+  for(var i = 0; i < array.length; i++){
       array2[i] = array[i] + 1;
   }
 return array2;
@@ -60,7 +60,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  return (palabras[0] + ' ' + palabras[1]);
+  return palabras.join(' ');
 }
 
 
@@ -68,12 +68,13 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for (var i = 0; i < array.length; i++) {
-    if (array[i] === elemento) {
+  for(var i = 0; i < array.length; i++) {
+    if(array[i] === elemento) {
     return true;
-}
+    }
+  }
    return false;
- }
+
 }
 
 
@@ -82,7 +83,7 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código:
      var grabador = 0;
-    for (var i = 0; i < numeros.length; i++) {
+    for(var i = 0; i < numeros.length; i++){
         grabador = grabador + numeros[i];
     }
     return grabador;
@@ -132,8 +133,8 @@ function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
   let contador = 0;
-  for (let i = 0; i < arreglo.length ; i++) {
-    if(arreglo[i] > 18){
+  for(let i = 0; i < arreglo.length ; i++){
+    if(arreglo[i] > 19){
       contador++
     }
   }
@@ -146,11 +147,11 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  if (numeroDeDia === 1 || numeroDeDia === 7){
+  if(numeroDeDia === 1 || numeroDeDia === 7){
     return "Es fin de semana";
 }
-  if (numeroDeDia > 1 && numeroDeDia < 7){
-        return "Es dia laboral";
+  if(numeroDeDia > 1 && numeroDeDia < 7){
+      return "Es dia Laboral";
     }
   
 } 
@@ -173,7 +174,7 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí 
-  for (var i =0 ; i < arreglo.length - 1; i++) {
+  for(var i = 0; i < arreglo.length - 1; i++){
     if(arreglo[i] !== arreglo[i+1]){
       return false
     }
@@ -189,12 +190,12 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
   var nuevoarray = []
- for ( var i = 0; i < array.length; i++) {
-    if (array[i] === 'Enero' || array[i] === 'Marzo' || array[i] === 'Noviembre') {
+ for( var i = 0; i < array.length; i++) {
+    if(array[i] === 'Enero' || array[i] === 'Marzo' || array[i] === 'Noviembre') {
      nuevoarray.push(array[i]);
    }
   }      
-    if (nuevoarray.length < 3) {
+    if(nuevoarray.length < 3) {
      return 'No se encontraron los meses pedidos'
 }
   else {
@@ -209,11 +210,12 @@ function mayorACien(array) {
   // Tu código:
   var nuevoarray = [];
   for(var i = 0; i < array.length; i++) {
-      if (array[i] > 100){
+      if(array[i] > 100){
           nuevoarray.push(array[i]);
       }
+    }
       return nuevoarray;
-  }
+  
 }
 
 
